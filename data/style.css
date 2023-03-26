@@ -1,0 +1,119 @@
+/* ********** PAGE ********* */
+body {
+    background: url("https://hey-oh.fr/wp-content/uploads/2018/10/wallpaper.wiki-Pictures-abstract-color-waves-PIC-WPB0012406.jpg") fixed;
+    color: white;
+    text-align: center;
+    font-family: verdana, sans-serif;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+}
+
+#blocPage {
+    width: 80%;
+    margin: auto;
+}
+
+/* ********** TEXTES ********** */
+
+h1 {
+    font-size: 5em;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    padding: 0;
+    margin: 10px;
+}
+
+main p {
+    font-size: 1.5em;
+}
+
+#redTxt {
+    color: RGB(255,0,0);
+}
+
+#greenTxt {
+    color: RGB(0,255,0);
+}
+
+#blueTxt {
+    color: RGB(0,0,255);
+}
+
+/* ********** BOUTONS ********** */
+
+button {
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+    color: white;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#colorGeneratorBtn {
+    width: 60%;
+    height: 100px;
+    font-size: 2.5em;
+    background: linear-gradient(273deg, rgba(167,72,46,1) 0%, rgba(83,128,189,1) 100%);
+}
+
+#redBtn, #greenBtn, #blueBtn {
+    width: 40%;
+    height: 70px;
+    font-size: 2em;
+}
+
+#redBtn {
+    background-color: RGB(255,0,0);
+}
+
+#greenBtn {
+    background-color: RGB(0,255,0);
+}
+
+#blueBtn {
+    background-color: RGB(0,0,255);
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.35s ease-in-out;
+    box-shadow: white 0 0 20px;
+}
+
+/* ********** AUTRE ********** */
+
+#coloredWindow {
+    width: 70%;
+    height: 200px;
+    background-color: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 2px gray solid;
+}
+
+hr {
+    margin: 100px;
+}
+
+hr:last-child {
+    margin: 20px 100px 20px 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-size: 1em;
+}
