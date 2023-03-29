@@ -1,47 +1,65 @@
 /* ********** PAGE ********* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: url("https://hey-oh.fr/wp-content/uploads/2018/10/wallpaper.wiki-Pictures-abstract-color-waves-PIC-WPB0012406.jpg") fixed;
+    background: url("../assets/bg.jpg") fixed center top;
     color: white;
     text-align: center;
     font-family: verdana, sans-serif;
     text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#blocPage {
-    width: 80%;
-    margin: auto;
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    backdrop-filter: sepia(80%);
+    padding-bottom: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #404040;
+    padding: 0.8rem;
 }
 
 /* ********** TEXTES ********** */
 
 h1 {
-    font-size: 5em;
-    margin: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto 0.2rem 2rem 0.2rem;
 }
 
-p {
-    padding: 0;
-    margin: 10px;
-}
-
-main p {
-    font-size: 1.5em;
+h3 {
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 #redTxt {
-    color: RGB(255,0,0);
+    color: RGB(255, 0, 0);
 }
 
 #greenTxt {
-    color: RGB(0,255,0);
+    color: RGB(0, 255, 0);
 }
 
 #blueTxt {
-    color: RGB(0,0,255);
+    color: RGB(0, 0, 255);
 }
 
 /* ********** BOUTONS ********** */
@@ -49,41 +67,45 @@ main p {
 button {
     text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
     color: white;
-    margin: 10px auto;
     border-radius: 15px;
     font-weight: bold;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 700px;
+    transition: 0.35s ease-in-out;
 }
 
 #colorGeneratorBtn {
-    width: 60%;
-    height: 100px;
-    font-size: 2.5em;
-    background: linear-gradient(273deg, rgba(167,72,46,1) 0%, rgba(83,128,189,1) 100%);
+    margin: 2rem auto;
+    font-size: 2rem;
+    background: linear-gradient(273deg, rgba(167, 72, 46, 1) 0%, rgba(83, 128, 189, 1) 100%);
+    min-height: 100px;
 }
 
-#redBtn, #greenBtn, #blueBtn {
-    width: 40%;
+#redBtn,
+#greenBtn,
+#blueBtn {
+    /* width: 40%; */
     height: 70px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #redBtn {
-    background-color: RGB(255,0,0);
+    background-color: RGB(255, 0, 0);
 }
 
 #greenBtn {
-    background-color: RGB(0,255,0);
+    background-color: RGB(0, 255, 0);
 }
 
 #blueBtn {
-    background-color: RGB(0,0,255);
+    background-color: RGB(0, 0, 255);
 }
 
 button:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.35s ease-in-out;
     box-shadow: white 0 0 20px;
+    transform: scale(1.1);
 }
 
 /* ********** AUTRE ********** */
@@ -98,22 +120,21 @@ button:hover {
 }
 
 hr {
-    margin: 100px;
+    width: 80%;
+    margin: 2rem;
 }
 
-hr:last-child {
-    margin: 20px 100px 20px 100px;
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    hr {
+        margin: 4rem auto;
+    }
+    
 }
 
 .hidden {
     display: none;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    font-size: 1em;
 }
