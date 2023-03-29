@@ -1,5 +1,6 @@
 /* ********** VARIABLES ********** */
 
+const textIndication = document.querySelector("#textIndication")
 const textResult1 = document.querySelector('#textResult1');
 const textResult2 = document.querySelector('#textResult2');
 const redTxt = document.querySelector('#redTxt');
@@ -55,6 +56,7 @@ const toggleParametersOn = () => {
     blueTxt.innerText = `Bleu ~${percentBlue}%`;
     textResult1.classList.remove('hidden');
     textResult2.classList.remove('hidden');
+    textIndication.classList.add('hidden');
     redTxt.classList.remove('hidden');
     greenTxt.classList.remove('hidden');
     blueTxt.classList.remove('hidden');
